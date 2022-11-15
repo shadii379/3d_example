@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-    
-    <script src="js/script.js" type="module"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Web Sample</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Script to override import issue of "three" -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.skypack.dev/three@0.139.2/build/three.module",
+          "three/": "https://cdn.skypack.dev/three@0.139.2/",
+          "dat.gui": "https://cdn.skypack.dev/dat.gui"
+        }
+      }
+    </script>
+    <!-- -----------------------------------------   -->
+
+  </head>
+  <body>
+    <canvas id="bg"> </canvas>
+    <!-- main tag is used to render other content like text,2d,...etc -->
+    <main>
+      <!-- <section>
+        <h1>Sample content</h1>
+        <p>
+          Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır
+          metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat
+          numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı
+          1500'lerden beri endüstri standardı sahte metinler olarak
+          kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış,
+          aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır.
+          1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının
+          yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum
+          sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+        </p>
+      </section> -->
+    </main>
+    <script src="./js/script.js" type="module"></script>
+  </body>
 </html>

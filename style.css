@@ -1,4 +1,25 @@
 body{
     margin: 0;
-    background-color: black;
+    color: white;
+}
+/* Canvas Section*/
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Main Section */
+main{
+    width: 100vw;
+    position: absolute;
+    color:white;
+    z-index: 99;
+    width: 100%;
+    margin: 0px auto;
+    padding: 120 px 0px;
+
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
 }
